@@ -1,0 +1,12 @@
+name: Quality Check
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  execute-stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout code
+        run: echo "all set"
